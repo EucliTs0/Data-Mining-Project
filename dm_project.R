@@ -97,6 +97,8 @@ coverType_labels <- as.matrix(coverType_labels)
 row.names(coverType_subset) <- c(1:count)
 row.names(coverType_labels) <- c(1:count)
 
+write.csv(coverType_subset, file = "coverType_subset.csv")
+write.csv(coverType_labels, file = "labels.csv")
 
 #Correlation matrix
 summary(coverType_subset)
